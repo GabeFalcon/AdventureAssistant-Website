@@ -1,0 +1,40 @@
+.commands {
+    height: 400px;
+    align-items: center;
+  }
+  
+  .guide-description-card {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    background: #2e2e2e; 
+    color: white;
+    height: 130px;
+    width: 100%;
+}
+
+.commands {
+    color: white;
+}
+
+.commands-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.command-item {
+    background-color: #33333300;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border-bottom: 1px solid #666666; /* Thin gray line */
+}
+
+.command {
+    color: white;
+    font-weight: bold;
+}
+
+.description {
+    color: #CCCCCC;
+}

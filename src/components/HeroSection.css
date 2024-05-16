@@ -1,0 +1,202 @@
+.navbar {
+    top: 0; /* Keep the navbar at the top */
+}
+
+.fa-wrench {
+    background-color: rgba(0, 0, 0, 0); /* Make wrench icon background transparent*/
+}
+
+
+.hero-container {
+    margin-top: 150px; 
+    display: flex; /* Flexbox */
+    align-items: center; 
+    justify-content: space-between; /* Spacing between text and video */
+}
+
+.hero-content > h1 {
+    color: #fff; 
+    font-size: 100px;
+    margin-top: -70px; 
+    margin-left: 240px;
+}
+
+.hero-content > p {
+    margin-top: 8px; 
+    color: #fff; 
+    font-size: 32px; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+        'Lucida Sans', Arial, sans-serif; 
+    margin-left: 240px; 
+}
+
+.video-container {
+    flex: 1; 
+    display: flex; 
+    justify-content: flex-end; 
+}
+
+.video-container > video {
+    height: 500px; 
+    width: 500px; 
+    border-radius: 50%; /* Making the video container circular */
+    margin-right: 250px; 
+    object-fit: cover; 
+}
+
+.hero-btns {
+    margin-top: 32px; 
+    margin-left: 235px; 
+}
+.hero-btns .btn {
+    margin: 6px; 
+}
+
+
+@media screen and (max-width: 1280px) {
+    .hero-container {
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center; 
+        margin-top: 350px; 
+    }
+
+    .hero-content > h1 {
+        color: #fff; 
+        font-size: 70px; 
+        margin-top: -180px; 
+        margin-left: 20px; 
+    }
+    
+    .hero-content > p {
+        margin-top: 8px; 
+        color: #fff; 
+        font-size: 30px; 
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+            'Lucida Sans', Arial, sans-serif; 
+        margin-left: 15px; 
+    }
+
+    .video-container {
+        margin-top: 20px; 
+        justify-content: center; 
+    }
+
+    .video-container > video {
+        margin-right: 0; 
+        margin-bottom: 20px; 
+        height: 300px;
+        width: 300px;
+    }
+
+    .hero-btns {
+        margin-top: 32px; 
+        margin-left: 75px; 
+    }
+    .hero-btns .btn {
+        margin: 6px; 
+    }
+}
+
+
+@media screen and (max-width: 960px) {
+    .hero-content {
+        margin-left: 20px; /* Adjusting margin for smaller screens */
+    }
+
+    .hero-content > h1 {
+        color: #fff; 
+        font-size: 70px; 
+        margin-top: -180px; 
+        margin-left: -20px; 
+    }
+    
+    .hero-content > p {
+        margin-top: 8px; 
+        color: #fff; 
+        font-size: 30px; 
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+            'Lucida Sans', Arial, sans-serif; 
+        margin-left: -20px; 
+    }
+
+    .video-container {
+        margin-top: 20px; 
+        justify-content: center; 
+        margin-right: 0px;
+    }
+
+    .video-container > video {
+        margin-right: 0; 
+        margin-bottom: 20px; 
+        height: 300px;
+        width: 300px;
+    }
+
+    .hero-btns {
+        margin-top: 32px; 
+        margin-left: 40px; 
+    }
+    .hero-btns .btn {
+        margin: 6px; 
+    }
+}
+
+@media screen and (max-width: 820px) {
+
+    .hero-btns {
+        margin-top: 32px; 
+        margin-left: 35px;
+    }
+    .hero-btns .btn {
+        margin: 6px;
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero-container {
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center; 
+        margin-top: 350px; 
+
+    }
+
+    .hero-content > h1 {
+        color: #fff; 
+        font-size: 70px; 
+        margin-top: -180px; 
+        margin-left: -20px; 
+    }
+    
+    .hero-content > p {
+        margin-top: 8px; 
+        color: #fff; 
+        font-size: 30px; 
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+            'Lucida Sans', Arial, sans-serif; 
+        margin-left: -20px; 
+    }
+
+    .video-container {
+        margin-top: 20px; 
+        justify-content: center; 
+    }
+
+    .video-container > video {
+        margin-right: 35px; 
+        margin-bottom: 20px; 
+        height: 300px;
+        width: 300px;
+    }
+
+    .hero-btns {
+        margin-top: 32px; 
+        margin-left: 20px; 
+        width: 100%;
+    }
+    .hero-btns .btn {
+        margin: 6px; 
+    }
+}

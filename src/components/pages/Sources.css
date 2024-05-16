@@ -1,0 +1,98 @@
+.sources {
+    height: 400px;
+    align-items: center;
+  }
+
+.sources-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.source {
+    background-color: #333333;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    width: 70%;
+}
+
+.source-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.source h2 {
+    margin: 0;
+   margin-left: 10px;
+}
+
+.source p {
+    margin-bottom: 20px;
+    background-color: #333333;
+}
+
+.source-tutbtn {
+    background-color: #555555;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none; 
+    font-family: inherit;
+    font-size: inherit; 
+    font-weight: inherit; 
+    margin-right: 10px; 
+}
+
+.source-btn:hover,
+.source-tutbtn:hover {
+    background-color: #3c6942;
+}
+
+.source-btn {
+    background-color: #555555;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none; 
+    font-family: inherit; 
+    font-size: inherit; 
+    font-weight: inherit; 
+}
+
+.source-logo {
+    height: 40px; /* Adjust height as needed */
+    margin-left: 10px;
+}
+
+@media only screen and (max-width: 602px) {
+    /* Media query for smaller screens */
+    .source-tutbtn {
+        margin-right: 0; /* Remove margin-right */
+    }
+
+    .source-btn {
+        background-color: #555555;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        text-decoration: none; 
+        font-family: inherit; 
+        font-size: inherit; 
+        font-weight: inherit; 
+        margin-top: 15px; /* Remove margin-right */
+    }
+}

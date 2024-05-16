@@ -1,0 +1,149 @@
+.navbar {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  z-index: 100;
+  width: 100%;
+  position: fixed;
+}
+
+.fa-bars,
+.fa-times {
+  background-color: #00000000;
+}
+
+.navbar-scrolled {
+  background-color: #141414a4;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 2000px;
+  background-color: #00000000;
+}
+
+.navbar-logo {
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+  background-color: #00000000;
+}
+
+.navbar-logo-image {
+  width: 65px;
+  height: 65px;
+  margin: 0 5px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.navbar-logo:hover {
+  color: #3c6942;
+  transition: color 0.3s ease;
+}
+
+.nav-menu {
+  display: flex;
+  position: fixed;
+  top: 90px;
+  right: -300px; /* Start off-screen */
+  background: #272727;
+  width: 300px; 
+  height: 100vh; /* Cover full height */
+  flex-direction: column;
+  text-align: center;
+  transition: right 0.7s ease; /* For smooth sliding */
+  padding-top: 20px; 
+  list-style-type: none; /* Remove bullet points */
+  margin: 0;
+}
+
+/* Slides the menu on click */
+.nav-menu.active {
+  right: 0;
+}
+
+/* Hamburger Menu Icon */
+.menu-icon {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #fff;
+  font-size: 28px;
+  background-color: #00000000;
+}
+
+/* Style the links inside the hamburger menu */
+.nav-links-mobile,
+.nav-links {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.7rem;
+  transition: color 0.3s ease;
+  background-color: #272727;
+}
+
+/* Change the color of links on hover */
+.nav-links-mobile:hover,
+.nav-links:hover {
+  color: #3c6942;
+  transition: color 0.3s ease;
+}
+
+/* Add a margin between listed links */
+.nav-menu li {
+margin-bottom: 10px;
+background-color: #272727;
+}
+
+.btn-mobile {
+  margin-left: auto; /* Push the button to the right */
+  padding-right: 60px;
+  background-color: #00000000;
+}
+
+@media screen and (max-width: 960px) {
+  .navbar {
+    padding: 0;
+  }
+  .NavbarItems {
+    position: relative;
+    background-color: #00000000;
+  }
+
+  .menu-icon {
+    display: flex;
+    background-color: #00000000;
+  }
+  
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    top: 80px;
+    right: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  .nav-menu.active {
+    right: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+    background-color: #272727;
+
+  }
+}

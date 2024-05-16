@@ -1,0 +1,74 @@
+.guide-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.step {
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.step h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.step p {
+    font-size: 18px;
+    color: white;
+}
+
+.step img {
+    max-width: 100%;
+    display: block;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.music-description-card{
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+    background: #2e2e2e; /* Move background color to the parent container */
+    color: white;
+    height: 130px;
+    width: 176%;
+}
+    
+.music-description-card > h2 {
+    text-align: center;
+    margin: 0; /* Remove any default margin */
+    background-color: #00000000;
+    font-family: "__satoshi_cb0634", "__satoshi_Fallback_cb0634", sans-serif;
+    font-weight: 500;
+}
+.guide-container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    max-width: 1120px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 1600px) {
+    .music-description-card > h2{
+        width: 450px;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .commands {
+        font-size: 70px;
+    }
+
+    .music-description-card > h2{
+        width: 400px;
+    }
+}

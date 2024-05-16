@@ -1,0 +1,513 @@
+.left-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.left-section button {
+  width: 150px;
+  height: 70px;
+  margin-bottom: 10px;
+  background-color: #2e2e2e;
+  font-size: 25px;
+  color: white;
+}
+
+.left-section button:hover {
+  color: #498051;
+}
+
+.character-sheet-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 10px;
+  border: 5px solid #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 150px;
+  height: 1700px;
+}
+  
+.character-sheet {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto auto;
+  gap: 10px;
+  font-size: 20px;
+}
+  
+.character-sheet .top-section {
+  display: flex;
+  flex-flow: row;
+  gap: 30px;
+  width: 1000px;
+  height: 160px;
+  border: 3px solid #000;
+  border-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.top-section {
+  margin-top: 12px;
+  margin-left: 25px;
+}
+
+.top-section input {
+  color: white;
+  padding-left: 5px;
+  height: 25px;
+}
+
+.character-sheet .ability-info {
+  grid-column: 1 / span 2;
+}
+
+  
+.character-sheet .ability-info label {
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+.ability-info {
+  border: 3px solid #000;
+  border-color: white;
+  border-radius: 10px;
+  margin-top: 5px;
+  margin-left: 25px;
+  width: 260px;
+}
+
+.ability-info input[type="number"] {
+  width: 100%;
+  height: 32px;
+  max-width: 55px;
+  color: white;
+  padding-left: 10px;
+  margin-bottom: 7px;
+  font-size: 18px;
+  border-color: white;
+  margin-left: -35px;
+  margin-top: 15px;
+}
+
+.ability-info span {
+  padding-left: 5px;
+  padding-top: 2px;
+  width: 45px;
+  height: 32px;
+  border: 2px solid #000;
+  border-color: white;
+  margin-bottom: 7px;
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+.character-sheet .saving-throws label {
+  margin-bottom: 7px;
+}
+
+.character-sheet .saving-throws {
+  border: 3px solid #000;
+  border-color: white;
+  border-radius: 10px;
+  flex-flow: column;
+  margin-top: -370px;
+  margin-left: 325px;
+  width: 250px;
+  background-color: #00000000;
+  grid-column: 1 / span 2;
+}
+
+.character-sheet .saving-throws-skills{
+  grid-column: 1 / span 2;
+  margin-left: 5px;
+  background-color: #00000000;
+}
+
+.saving-throws .save-number {
+  margin-left: 5px;
+  background-color: #00000000;
+}
+
+.saving-throw-circle {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  background-color: #00000000;
+}
+
+.saving-throw-circle.filled {
+  background-color: #498051;
+}
+
+.character-sheet .skills {
+  border: 3px solid #000;
+  border-color: white;
+  border-radius: 10px;
+  flex-flow: column;
+  margin-top: 120px;
+  margin-left: 15px;
+  width: 269px;
+  grid-column: 1 / span 2;
+}
+
+
+.character-sheet .skills label {
+  width: 198px !important;
+  margin-bottom: 10px;
+}
+
+.skill-circle {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  margin-left: 5px;
+  margin-bottom: 10px;
+}
+
+.true {
+  background-color: #498051;
+}
+
+.skills .save-number {
+  margin-left: 5px;
+  margin-bottom: 10px;
+}
+
+.character-sheet .inspiration-proficiency {
+  border: 3px solid #000;
+  border-color: white;
+  border-radius: 10px;
+  width: 190px;
+  height: 180px;
+  margin-top: -545px;
+}
+
+.character-sheet .inspiration-proficiency label {
+  margin-left: 10px;
+}
+
+.inspiration-proficiency input[type="text"] {
+  width: 100%;
+  height: 32px;
+  max-width: 55px;
+  color: white;
+  padding-left: 10px;
+  margin-bottom: 7px;
+  font-size: 18px;
+  border-color: white;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+.character-sheet .death-saves {
+  grid-column: 1 / span 2;
+  border: 3px solid #000;
+  border-color: white;
+  border-radius: 10px;
+  width: 190px;
+  height: 280px;
+  margin-top: -2125px;
+  margin-left: 625px;
+}
+
+.death-saves label {
+  margin-left: 10px;
+}
+
+.death-saves span {
+  margin-left: 17px;
+}
+
+.death-saves button {
+  height: 55px;
+  font-size: 20px;
+  margin-left: 17px;
+}
+
+.character-sheet .hit-points,
+.character-sheet .equipment-notes {
+  grid-column: 1 / span 2;
+}
+
+.character-sheet .hit-points {
+  border: 3px solid #000;
+  border-color: white;
+  border-radius: 10px;
+  width: 393px;
+  height: 240px;
+  margin-top: -2150px;
+  margin-left: 857px;
+  padding: 10px;
+  padding-left: 10px;
+}
+
+.hit-points input {
+  padding-left: 5px;
+  width: 100px;
+  height: 30px;
+}
+
+
+.character-sheet .equipment-notes {
+  display: flex;
+  flex-flow: column;
+  margin-top: -1550px;
+  margin-left: 330px;
+  background-color: #00000000;
+  width: 393px;
+  height: 240px;
+}
+.character-sheet .equipment-notes textarea {
+  background-color: #00000000;
+  color: white;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  padding-bottom: 500px;
+  max-width: 900px; /* Adjust width as needed */
+  max-height: 100px;
+  min-height: 100px;
+  min-width: 900px;
+}
+.character-sheet .equipment-notes label {
+  background-color: #00000000;
+  margin-bottom: 200px;
+  padding-left: 10px;
+  padding-bottom: 1000px;
+}
+
+.spelllist textarea {
+  width: calc(100% - 50px); /* Adjust width as needed */
+}
+
+.character-sheet .equipment-notes div {
+  background-color: #00000000;
+}
+
+
+
+.character-sheet .hit-points label {
+  margin: 20px;
+  padding-bottom: 10px;
+}
+.character-sheet .hit-points input {
+  margin-bottom: 15px;
+  color: white;
+}
+
+  
+  .character-sheet .basic-info div,
+  .character-sheet .background-info div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    color: white
+  }
+  
+  .character-sheet label {
+    width: 150px;
+  }
+  
+  .character-sheet input[type="text"],
+
+  .input {
+    margin-left: 10px;
+  }
+  
+  .character-sheet .ability-info div,
+  .character-sheet .saving-throws-skills div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  
+  .character-sheet .ability-info h3,
+  .character-sheet .saving-throws-skills h3,
+  .character-sheet .death-saves h3,
+  .character-sheet .spell-list h3 {
+    margin-top: 15px;
+  }
+
+@media only screen and (max-width: 768px) {
+  .character-sheet-container {
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .top-section {
+    width: auto;
+    flex-direction: column;
+  }
+
+  .character-sheet .saving-throws {
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  .character-sheet .skills {
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  .character-sheet .inspiration-proficiency {
+    margin-top: 0;
+  }
+
+  .character-sheet .death-saves {
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  .character-sheet .hit-points {
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  .character-sheet .equipment-notes {
+    margin-top: 0;
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+
+  .character-sheet .ability-info,
+  .character-sheet .saving-throws-skills,
+  .character-sheet .inspiration-proficiency,
+  .character-sheet .death-saves,
+  .character-sheet .hit-points,
+  .character-sheet .equipment-notes {
+    grid-column: 1 / span 4;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .sources {
+    font-size: 40px;
+  }
+
+  .character-sheet-container {
+    width: 370px;
+    min-height: 3800px;
+  }
+
+  .left-section button {
+    width: 120px;
+    height: 60px;
+    font-size: 20px;
+  }
+
+  .character-sheet .ability-info,
+  .character-sheet .saving-throws-skills,
+  .character-sheet .inspiration-proficiency,
+  .character-sheet .death-saves,
+  .character-sheet .hit-points,
+  .character-sheet .equipment-notes {
+    grid-column: 1 / span 4;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .character-sheet .top-section {
+    display: flex;
+    flex-flow: column;
+    gap: 1px;
+    width: 1000px;
+
+    border: 3px solid #000;
+    border-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    text-decoration: none;
+    padding: 10px;
+  }
+  .top-section {
+    margin-top: 12px;
+    margin-left: 30px;
+    min-height: 275px;
+    max-width: 325px;
+  }
+
+  .top-section input {
+    color: white;
+    padding-left: 5px;
+    height: 25px;
+    width: 130px; 
+  }
+  
+  .character-sheet .ability-info {
+    border: 3px solid #000;
+    border-color: white;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-left: 60px;
+    width: 260px;
+  }
+
+  .character-sheet .inspiration-proficiency {
+    margin-left: 95px;
+  }
+
+  .character-sheet .saving-throws {
+    margin-left: 60px;
+  }
+
+  .character-sheet .saving-throws-skills{
+    margin-left: 5px;
+  }
+
+.saving-throws .save-number {
+  margin-left: 5px;
+  background-color: #00000000;
+}
+
+.character-sheet .skills {
+  margin-top: 35px;
+  margin-left: 50px;
+}
+
+.character-sheet .death-saves {
+  margin-left: 95px;
+  height: 300px;
+}
+
+.character-sheet .hit-points {
+  max-width: 330px;
+  margin-left: 27px;
+}
+
+
+.character-sheet .equipment-notes {
+  margin-left: 30px;
+  background-color: #00000000;
+  width: 33px;
+  height: 240px;
+}
+.character-sheet .equipment-notes textarea {
+  background-color: #00000000;
+  color: white;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  padding-bottom: 500px;
+  max-width: 300px; 
+  max-height: 100px;
+  min-height: 100px;
+  min-width: 330px;
+}
+}

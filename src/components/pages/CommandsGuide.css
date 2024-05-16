@@ -1,0 +1,60 @@
+.bot-commands-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.table-of-contents {
+    width: 80%;
+    display: flex;
+}
+
+.column-box {
+    flex: 1;
+    padding: 10px;
+}
+
+.column {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #333333;
+}
+
+.table-of-contents ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: #333333;
+}
+
+.table-of-contents a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    display: block;
+    margin-bottom: 10px;
+    background-color: #333333;
+
+}
+
+.table-of-contents a:hover {
+    color: #3c6942;
+}
+
+.command-section {
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.command-section h2,
+.command-section p {
+    color: white;
+}
+
+.command-section img {
+    max-width: 100%;
+    height: auto;
+}

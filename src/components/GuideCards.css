@@ -1,0 +1,143 @@
+.guides {
+  height: 400px;
+  align-items: center;
+}
+
+.guide-cards {
+    background: #00000000;
+}
+
+.guide-description-card {
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+    background: #2e2e2e; /* Move background color to the parent container */
+    color: white;
+    height: 130px;
+    width: 100%;
+}
+    
+.guide-description-card > h1 {
+    text-align: center;
+    margin: 0; /* Remove any default margin */
+    background-color: #00000000;
+    font-family: "__satoshi_cb0634", "__satoshi_Fallback_cb0634", sans-serif;
+    font-weight: 500;
+}  
+
+.guide-cards__container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    max-width: 1120px;
+    width: 100%;
+    margin: 0 auto;
+}
+  
+  .guide-cards__wrapper {
+    position: relative;
+    margin: 50px 0 45px;
+  }
+  
+  .guide-cards__items {
+    margin-bottom: 24px;
+  }
+  
+  .guide-cards__item {
+    display: flex;
+    flex: 1;
+    margin: 0 1rem;
+    border-radius: 10px;
+    height: 250px;
+  }
+  
+  .guide-cards__item__link {
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.15);
+    -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+    filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+    border-radius: 10px;
+    overflow: hidden;
+    text-decoration: none;
+  }
+  
+  .guide-cards__item__pic-wrap {
+    position: relative;
+    width: 100%;
+    padding-top: 67%;
+    overflow: hidden;
+  }
+  
+  .guide-fade-img {
+    animation-name: fade-img;
+    animation-duration: 2s;
+  }
+  
+  .guide-cards__item__pic-wrap::after {
+    content: attr(data-category);
+    position: absolute;
+    bottom: 0;
+    margin-left: 10px;
+    padding: 6px 8px;
+    max-width: calc((100%) - 60px);
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #498051;
+    box-sizing: border-box;
+  }
+  
+  .guide-cards__item__img {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 50%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    transition: all 0.2s linear;
+  }
+  
+  .guide-cards__item__img:hover {
+    transform: scale(1.1);
+  }
+  
+  .guide-cards__item__info {
+    padding: 20px 30px 30px;
+    width: 95%; /* Set the width to 100% */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+}
+  
+  .guide-cards__item__text {
+    color: #335337;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  
+  @media only screen and (min-width: 1200px) {
+    .content__blog__container {
+      width: 84%;
+    }
+  }
+  
+  @media only screen and (min-width: 1024px) {
+    .cards__items {
+      display: flex;
+    }
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    .cards__item {
+      margin-bottom: 2rem;
+    }
+    .description-card {
+        height: 200px;
+        width: 100%;
+      }
+  }
