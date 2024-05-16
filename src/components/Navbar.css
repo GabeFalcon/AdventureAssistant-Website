@@ -147,3 +147,48 @@ background-color: #272727;
 
   }
 }
+
+@media screen and (max-width: 400px) {
+
+  .navbar-logo {
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.7rem;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    background-color: #00000000;
+  }
+
+  .NavbarItems {
+    position: relative;
+    background-color: #00000000;
+  }
+
+  .menu-icon {
+    display: flex;
+    background-color: #00000000;
+  }
+  
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    top: 80px;
+    right: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  .nav-menu.active {
+    right: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+    background-color: #272727;
+
+  }
+}

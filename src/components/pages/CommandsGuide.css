@@ -58,3 +58,19 @@
     max-width: 100%;
     height: auto;
 }
+
+@media screen and (max-width: 400px) {
+    .column-box {
+        padding: 15px;
+    }
+    .column {
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        padding: 5px;
+        background-color: #333333;
+    }
+    .table-of-contents {
+        width: 100%;
+        display: flex;
+    }
+}
