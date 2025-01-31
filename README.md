@@ -1,2 +1,4 @@
 # AdventureAssistant-Website
-A website page for the AdventureAssistant Discord Bot. Contains information about how to use AdventureAssistant as well as custom character sheets for any user.
+A website page for the AdventureAssistant Discord Bot. 
+
+Provides commands and other tools for the bot. As well as character sheet creation for users that create an account.
